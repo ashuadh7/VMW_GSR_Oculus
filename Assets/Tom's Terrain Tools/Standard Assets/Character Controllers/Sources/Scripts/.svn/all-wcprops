@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/VMW/!svn/ver/3/trunk/Assets/Tom's%20Terrain%20Tools/Standard%20Assets/Character%20Controllers/Sources/Scripts
+END
+ThirdPersonController.js
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/VMW/!svn/ver/3/trunk/Assets/Tom's%20Terrain%20Tools/Standard%20Assets/Character%20Controllers/Sources/Scripts/ThirdPersonController.js
+END
+MouseLook.cs
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/VMW/!svn/ver/3/trunk/Assets/Tom's%20Terrain%20Tools/Standard%20Assets/Character%20Controllers/Sources/Scripts/MouseLook.cs
+END
+PlatformInputController.js
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/VMW/!svn/ver/3/trunk/Assets/Tom's%20Terrain%20Tools/Standard%20Assets/Character%20Controllers/Sources/Scripts/PlatformInputController.js
+END
+ThirdPersonCamera.js
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/VMW/!svn/ver/3/trunk/Assets/Tom's%20Terrain%20Tools/Standard%20Assets/Character%20Controllers/Sources/Scripts/ThirdPersonCamera.js
+END
+ThirdPersonController.js.meta
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/VMW/!svn/ver/3/trunk/Assets/Tom's%20Terrain%20Tools/Standard%20Assets/Character%20Controllers/Sources/Scripts/ThirdPersonController.js.meta
+END
+MouseLook.cs.meta
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/VMW/!svn/ver/3/trunk/Assets/Tom's%20Terrain%20Tools/Standard%20Assets/Character%20Controllers/Sources/Scripts/MouseLook.cs.meta
+END
+FPSInputController.js
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/VMW/!svn/ver/3/trunk/Assets/Tom's%20Terrain%20Tools/Standard%20Assets/Character%20Controllers/Sources/Scripts/FPSInputController.js
+END
+CharacterMotor.js
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/VMW/!svn/ver/3/trunk/Assets/Tom's%20Terrain%20Tools/Standard%20Assets/Character%20Controllers/Sources/Scripts/CharacterMotor.js
+END
+PlatformInputController.js.meta
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/VMW/!svn/ver/3/trunk/Assets/Tom's%20Terrain%20Tools/Standard%20Assets/Character%20Controllers/Sources/Scripts/PlatformInputController.js.meta
+END
+ThirdPersonCamera.js.meta
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/VMW/!svn/ver/3/trunk/Assets/Tom's%20Terrain%20Tools/Standard%20Assets/Character%20Controllers/Sources/Scripts/ThirdPersonCamera.js.meta
+END
+FPSInputController.js.meta
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/VMW/!svn/ver/3/trunk/Assets/Tom's%20Terrain%20Tools/Standard%20Assets/Character%20Controllers/Sources/Scripts/FPSInputController.js.meta
+END
+CharacterMotor.js.meta
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/VMW/!svn/ver/3/trunk/Assets/Tom's%20Terrain%20Tools/Standard%20Assets/Character%20Controllers/Sources/Scripts/CharacterMotor.js.meta
+END

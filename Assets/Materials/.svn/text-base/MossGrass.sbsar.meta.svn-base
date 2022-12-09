@@ -1,0 +1,154 @@
+fileFormatVersion: 1
+guid: 8b856082712094fba8b675a841b5b5ab
+SubstanceImporter:
+  importerVersion: 1
+  materials:
+    MossGrass:
+      prototypeName: Bitmap2Material
+      shaderName: Bumped Diffuse
+      inputs:
+        $outputsize:
+          scalar: 8 8 0 0
+        Ratio:
+          scalar: 1 1 0 0
+        MakeItTile_Method:
+          scalar: 2 0 0 0
+        Diffuse_Sharpen:
+          scalar: 0.1 0 0 0
+        Normal_Strength:
+          scalar: 1.35716 0 0 0
+        Normal_Fine_Smoothing:
+          scalar: 0.110647 0 0 0
+        Normal_Medium_Smoothing:
+          scalar: 0.127262 0 0 0
+        Normal_Large_Smoothing:
+          scalar: 0.7 0 0 0
+        Normal_Sharpen:
+          scalar: 0.136577 0 0 0
+        Normal_Shape_Recognition:
+          scalar: 0.68236 0 0 0
+        Recognition_Angle:
+          scalar: 0.125 0 0 0
+        Specular_Diffuse_Influence:
+          scalar: 0.2 0 0 0
+        Specular_Saturation:
+          scalar: 0.5 0 0 0
+        Specular_Sharpen:
+          scalar: 0.1 0 0 0
+        Specular_Levels_In:
+          scalar: 0.3 0.6 0.81 0
+        Specular_Levels_Out:
+          scalar: 0 1 0 0
+        HeightMap_Balance:
+          scalar: 32 0 0 0
+        HeightMap_AutoLevel:
+          scalar: 1 0 0 0
+        HeightMap_Levels:
+          scalar: 0 1 0 0
+        AO_Spread:
+          scalar: 0.5 0 0 0
+        AO_Light_Angle:
+          scalar: 0.125 0 0 0
+        Input:
+          texture: {fileID: 2800000, guid: c6e0767b1f8c34890ac245217f4b9731, type: 1}
+      informations:
+        offset: 0 0
+        scale: 1 1
+        flags: 1
+      properties:
+        _Shininess: 0.078125
+        _Color: 1 1 1 1
+        _SpecColor: 0.5 0.5 0.5 1
+        _MainTex:
+          texture: {fileID: 1259507872, guid: 8b856082712094fba8b675a841b5b5ab, type: 1}
+          offset: 0 0
+          scale: 1 1
+        _BumpMap:
+          texture: {fileID: -1221672287, guid: 8b856082712094fba8b675a841b5b5ab, type: 1}
+          offset: 0 0
+          scale: 1 1
+      textures:
+        Bitmap2Material_Diffuse:
+          alphaSource: 5
+          filterMode: 1
+          aniso: 1
+          wrapMode: 0
+        Bitmap2Material_Specular:
+          alphaSource: 0
+          filterMode: 1
+          aniso: 1
+          wrapMode: 0
+        Bitmap2Material_Normal:
+          alphaSource: 0
+          filterMode: 1
+          aniso: 1
+          wrapMode: 0
+        Bitmap2Material_Bump:
+          alphaSource: 0
+          filterMode: 1
+          aniso: 1
+          wrapMode: 0
+        Bitmap2Material_Displacement:
+          alphaSource: 0
+          filterMode: 1
+          aniso: 1
+          wrapMode: 0
+        Bitmap2Material_Height:
+          alphaSource: 0
+          filterMode: 1
+          aniso: 1
+          wrapMode: 0
+        Bitmap2Material_Opacity:
+          alphaSource: 0
+          filterMode: 1
+          aniso: 1
+          wrapMode: 0
+        Bitmap2Material_AmbientOcclusion:
+          alphaSource: 0
+          filterMode: 1
+          aniso: 1
+          wrapMode: 0
+        MossGrass_Diffuse:
+          alphaSource: 5
+          filterMode: 1
+          aniso: 1
+          wrapMode: 0
+        MossGrass_Specular:
+          alphaSource: 0
+          filterMode: 1
+          aniso: 1
+          wrapMode: 0
+        MossGrass_Normal:
+          alphaSource: 0
+          filterMode: 1
+          aniso: 1
+          wrapMode: 0
+        MossGrass_Bump:
+          alphaSource: 0
+          filterMode: 1
+          aniso: 1
+          wrapMode: 0
+        MossGrass_Displacement:
+          alphaSource: 0
+          filterMode: 1
+          aniso: 1
+          wrapMode: 0
+        MossGrass_Height:
+          alphaSource: 0
+          filterMode: 1
+          aniso: 1
+          wrapMode: 0
+        MossGrass_Opacity:
+          alphaSource: 0
+          filterMode: 1
+          aniso: 1
+          wrapMode: 0
+        MossGrass_AmbientOcclusion:
+          alphaSource: 0
+          filterMode: 1
+          aniso: 1
+          wrapMode: 0
+      buildSettings:
+        '':
+          maxTextureSize: 1024
+          textureFormat: 0

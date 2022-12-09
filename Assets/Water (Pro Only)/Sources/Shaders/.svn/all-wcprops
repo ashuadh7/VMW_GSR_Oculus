@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/VMW/!svn/ver/3/trunk/Assets/Tom's%20Terrain%20Tools/Standard%20Assets/Water%20(Pro%20Only)/Sources/Shaders
+END
+RiverWater.shader
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/VMW/!svn/ver/3/trunk/Assets/Tom's%20Terrain%20Tools/Standard%20Assets/Water%20(Pro%20Only)/Sources/Shaders/RiverWater.shader
+END
+RiverWaterVertexColor.shader.meta
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/VMW/!svn/ver/3/trunk/Assets/Tom's%20Terrain%20Tools/Standard%20Assets/Water%20(Pro%20Only)/Sources/Shaders/RiverWaterVertexColor.shader.meta
+END
+FX-Water.shader
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/VMW/!svn/ver/3/trunk/Assets/Tom's%20Terrain%20Tools/Standard%20Assets/Water%20(Pro%20Only)/Sources/Shaders/FX-Water.shader
+END
+RiverWater.shader.meta
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/VMW/!svn/ver/3/trunk/Assets/Tom's%20Terrain%20Tools/Standard%20Assets/Water%20(Pro%20Only)/Sources/Shaders/RiverWater.shader.meta
+END
+FX-Water.shader.meta
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/VMW/!svn/ver/3/trunk/Assets/Tom's%20Terrain%20Tools/Standard%20Assets/Water%20(Pro%20Only)/Sources/Shaders/FX-Water.shader.meta
+END
+RiverWaterVertexColor.shader
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/VMW/!svn/ver/3/trunk/Assets/Tom's%20Terrain%20Tools/Standard%20Assets/Water%20(Pro%20Only)/Sources/Shaders/RiverWaterVertexColor.shader
+END

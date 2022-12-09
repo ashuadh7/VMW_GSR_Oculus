@@ -1,0 +1,10 @@
+Jun 3, 2017
+- Each day's routine is in seperate folders
+- They are numbered with respect to their sequence:
+If the file name starts with 00, that is the first
+audio to be listened on that day which follows
+by 01, 02, etc.
+- These are not original recordings. They are edited
+so that high-pitched sounds are more bass (to not
+irritate CPPs). And each recording has a 7-10 second
+gap.

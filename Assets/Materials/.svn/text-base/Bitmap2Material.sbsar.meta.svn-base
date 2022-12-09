@@ -1,0 +1,118 @@
+fileFormatVersion: 1
+guid: 34f03728c5e3c43498b0dd1232cd94ab
+SubstanceImporter:
+  importerVersion: 1
+  materials:
+    Bitmap2Material:
+      prototypeName: Bitmap2Material
+      shaderName: Diffuse_RoadOffset
+      inputs:
+        Input:
+          texture: {fileID: 2800000, guid: fdc73f1831a44e842a2f9aaa4d6e4211, type: 1}
+        MakeItTile_Method:
+          scalar: 2 0 0 0
+        Normal_Strength:
+          scalar: 6.00251 0 0 0
+        Normal_Large_Smoothing:
+          scalar: 0.421804 0 0 0
+        Recognition_Angle:
+          scalar: 0.556078 0 0 0
+        Specular_Diffuse_Influence:
+          scalar: 0.267669 0 0 0
+        Highlights_Cancel:
+          scalar: 0.14787 0 0 0
+        Depth_Balance:
+          scalar: -0.120301 0 0 0
+        $outputsize:
+          scalar: 8 8 0 0
+        $randomseed:
+          scalar: 40 0 0 0
+        Ratio:
+          scalar: 1 1 0 0
+        Splat_Angle_Random:
+          scalar: 0.724311 0 0 0
+        Diffuse_Sharpen:
+          scalar: 0.1 0 0 0
+        Normal_Fine_Smoothing:
+          scalar: 0.5 0 0 0
+        Normal_Shape_Recognition:
+          scalar: 1 0 0 0
+        Specular_Saturation:
+          scalar: 0.697995 0 0 0
+        Specular_Sharpen:
+          scalar: 0.1 0 0 0
+        Specular_Levels_In:
+          scalar: 0.3 0.6 0.81 0
+        Specular_Levels_Out:
+          scalar: 0 1 0 0
+        HeightMap_Balance:
+          scalar: 32 0 0 0
+        HeightMap_AutoLevel:
+          scalar: 1 0 0 0
+        HeightMap_Levels:
+          scalar: 0 1 0 0
+        AO_Spread:
+          scalar: 0.5 0 0 0
+        AO_Light_Angle:
+          scalar: 0.125 0 0 0
+      informations:
+        offset: 0 0
+        scale: 1 1
+        flags: 1
+      properties:
+        _Shininess: 0.4698558
+        _Color: 1 1 1 1
+        _SpecColor: 0.5 0.5 0.5 1
+        _MainTex:
+          texture: {fileID: -86491109, guid: 34f03728c5e3c43498b0dd1232cd94ab, type: 1}
+          offset: 0 0
+          scale: 1 1
+        _BumpMap:
+          texture: {fileID: -1577246934, guid: 34f03728c5e3c43498b0dd1232cd94ab, type: 1}
+          offset: 0 0
+          scale: 1 1
+      textures:
+        Bitmap2Material_Diffuse:
+          alphaSource: 6
+          filterMode: 1
+          aniso: 1
+          wrapMode: 0
+        Bitmap2Material_Specular:
+          alphaSource: 0
+          filterMode: 1
+          aniso: 1
+          wrapMode: 0
+        Bitmap2Material_Normal:
+          alphaSource: 0
+          filterMode: 1
+          aniso: 1
+          wrapMode: 0
+        Bitmap2Material_Bump:
+          alphaSource: 0
+          filterMode: 1
+          aniso: 1
+          wrapMode: 0
+        Bitmap2Material_Displacement:
+          alphaSource: 0
+          filterMode: 1
+          aniso: 1
+          wrapMode: 0
+        Bitmap2Material_Height:
+          alphaSource: 0
+          filterMode: 1
+          aniso: 1
+          wrapMode: 0
+        Bitmap2Material_Opacity:
+          alphaSource: 0
+          filterMode: 1
+          aniso: 1
+          wrapMode: 0
+        Bitmap2Material_AmbientOcclusion:
+          alphaSource: 0
+          filterMode: 1
+          aniso: 1
+          wrapMode: 0
+      buildSettings:
+        '':
+          maxTextureSize: 1024
+          textureFormat: 0
