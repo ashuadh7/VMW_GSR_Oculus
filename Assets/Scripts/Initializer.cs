@@ -55,8 +55,13 @@ public class Initializer : MonoBehaviour
 			// m = desired data/current data
 			// y = ( x - current data global min )*m + desired global min
 			//   Subtract and add the two mins so that both current and desired data starts at 0, for multiplication.  
-			float m = normalizedGlobalMax / normalizedInitMax;
-			float b = -m * m_initMin + mapGlobalMin;
+			float m = 0;
+			float b = 200;
+			if (normalizedInitMax != 0)
+			{
+				m = normalizedGlobalMax / normalizedInitMax;
+				b = -m * m_initMin + mapGlobalMin;
+			}
 			fogController.mapFcn_b = b;
 			fogController.mapFcn_m = m;
 			Debug.Log("m: " + m);

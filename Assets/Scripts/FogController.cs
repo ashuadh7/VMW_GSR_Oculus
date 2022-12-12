@@ -25,7 +25,7 @@ public class FogController : MonoBehaviour
 	{
 		RenderSettings.fog = true;
 		RenderSettings.fogMode = FogMode.Linear;
-		RenderSettings.fogEndDistance = 200;
+		RenderSettings.fogEndDistance = 350;
 		//dateAndTime = System.DateTime.Now.ToString("yyyyMMdd_HHmmss");
 		//dataFile = new StreamWriter("Readings\\" + "Later_" + dateAndTime + ".csv", true, System.Text.Encoding.UTF8, 1024 * 3);
 		//string nextLine = "Time, X Position, Y Position, Z Position, GSR";

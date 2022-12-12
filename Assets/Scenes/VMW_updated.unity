@@ -19,7 +19,7 @@ RenderSettings:
   m_FogMode: 1
   m_FogDensity: 0.025
   m_LinearFogStart: -7.4
-  m_LinearFogEnd: 200
+  m_LinearFogEnd: 350
   m_AmbientSkyColor: {r: 1, g: 1, b: 1, a: 1}
   m_AmbientEquatorColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   m_AmbientGroundColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
@@ -1873,7 +1873,7 @@ MonoBehaviour:
   ready: 0
   fogController: {fileID: 174434599}
   head: {fileID: 45}
-  mapGlobalMax: 400
+  mapGlobalMax: 700
   mapGlobalMin: 10
   m_timer: 0
   duration: 4
