@@ -75,7 +75,7 @@ public class Sequencer : MonoBehaviour
                     item.Stop();
                 }
             }
-            dailySequences[4].Play();
+            dailySequences[3].Play();
 
         }
         //if(dailySequences[currentDay].isPlaying == false)

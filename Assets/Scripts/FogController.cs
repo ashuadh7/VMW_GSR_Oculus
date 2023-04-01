@@ -5,9 +5,9 @@ using System.IO;
 public class FogController : MonoBehaviour 
 {
 	[HideInInspector]
-	public float mapFcn_m;
+	public float mapFcn_m = 0;
 	[HideInInspector]
-	public float mapFcn_b;
+	public float mapFcn_b = 550;
 	public float distance;
 
 	//public GameObject head;
@@ -18,46 +18,75 @@ public class FogController : MonoBehaviour
 	//[SerializeField]
     private float m_modifier = 1;
 	[SerializeField]
-	private float m_maxChange;
+	private float distance_maxChange = 50;
+	[SerializeField]
+	private int average_over = 100;
+	private float[] running_distance;
+	private float average_distance;
+	private int count = 0;
+	private int counter = 0;
+	private float prevFogDistance = 150;
 	//private string dateAndTime;
 	//private new StreamWriter dataFile;
 	private void Start()
 	{
 		RenderSettings.fog = true;
 		RenderSettings.fogMode = FogMode.Linear;
-		RenderSettings.fogEndDistance = 350;
+		RenderSettings.fogEndDistance = 150;
 		//dateAndTime = System.DateTime.Now.ToString("yyyyMMdd_HHmmss");
 		//dataFile = new StreamWriter("Readings\\" + "Later_" + dateAndTime + ".csv", true, System.Text.Encoding.UTF8, 1024 * 3);
 		//string nextLine = "Time, X Position, Y Position, Z Position, GSR";
 		//dataFile.WriteLine(nextLine);
 		//dataFile.Close();
+		running_distance = new float[average_over];
+		for (int i = 0; i < average_over; i++)
+        {
+			running_distance[i] = 150;
+        }
 	}
 
 	private void Update()
 	{
-
+		
 		float curData = m_data.currData;
 		float prevData = m_data.prevData;
 
 		float newFogDensity = curData * m_modifier;
-		float prevFogDensity = prevData * m_modifier;
 
 		if (m_initializer.ready)
 		{
 			newFogDensity = -(mapFcn_m * newFogDensity) + m_initializer.mapGlobalMax - mapFcn_b;
-			//newFogDensity = (newFogDensity - mapFcn_b) * mapFcn_m + 10;
-			Debug.Log("Fog Density: " + newFogDensity);
-			//if (newFogDensity > 0)
+			if (float.IsNaN(newFogDensity) || newFogDensity < 150)
 			{
-				RenderSettings.fogEndDistance = newFogDensity;
-				print("Change to: " + RenderSettings.fogEndDistance);
-				print("Current Data: " + curData + " Modifier: " + m_modifier);
+				newFogDensity = 150;
 			}
-			
-			//dataFile = new StreamWriter("Readings\\" + "Later_" + dateAndTime + ".csv", true, System.Text.Encoding.UTF8, 1024 * 3);
-			//string nextLine = m_initializer.m_timer + "," + head.transform.position.x + "," + head.transform.position.y + "," + head.transform.position.z + "," + curData;
-			//dataFile.WriteLine(nextLine);
-			//dataFile.Close();
+			if (count < average_over)
+			{
+				running_distance[count] = newFogDensity;
+				count++;
+			}
+			else
+			{
+				if (counter < average_over)
+				{
+					running_distance[counter] = newFogDensity;
+					counter++;
+				}
+				else
+                {
+					running_distance[0] = newFogDensity;
+					counter = 1;
+                }
+
+				for (int i = 0; i < average_over; i++)
+                {
+					average_distance += running_distance[i];
+                }
+				average_distance /= average_over;
+				newFogDensity = average_distance;
+				RenderSettings.fogEndDistance = newFogDensity;
+			}
+			prevFogDistance = newFogDensity;
 		}
 	}
 

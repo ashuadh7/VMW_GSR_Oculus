@@ -19,7 +19,7 @@ RenderSettings:
   m_FogMode: 1
   m_FogDensity: 0.025
   m_LinearFogStart: -7.4
-  m_LinearFogEnd: 350
+  m_LinearFogEnd: 150
   m_AmbientSkyColor: {r: 1, g: 1, b: 1, a: 1}
   m_AmbientEquatorColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   m_AmbientGroundColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
@@ -1872,7 +1872,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ready: 0
   fogController: {fileID: 174434599}
-  head: {fileID: 45}
+  cameraRig: {fileID: 45}
+  head: {fileID: 2022303962}
   mapGlobalMax: 700
   mapGlobalMin: 10
   m_timer: 0
@@ -3272,7 +3273,7 @@ AudioSource:
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
-  BypassReverbZones: 0
+  BypassReverbZones: 1
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
