@@ -1858,7 +1858,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &174434596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1871,6 +1871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ready: 0
+  walkDone: 0
   fogController: {fileID: 174434599}
   cameraRig: {fileID: 45}
   head: {fileID: 2022303962}
@@ -1921,7 +1922,8 @@ MonoBehaviour:
   distance: 0
   m_data: {fileID: 174434597}
   m_initializer: {fileID: 174434596}
-  m_maxChange: 100
+  distance_maxChange: 50
+  average_over: 100
 --- !u!1 &198097311
 GameObject:
   m_ObjectHideFlags: 0

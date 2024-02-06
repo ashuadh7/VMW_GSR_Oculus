@@ -90,7 +90,7 @@ class Collector:
 
     def stream_callback(self, sender: int, data: bytearray):
         global  firstTime
-        print(firstTime)
+        # print(firstTime)
         if firstTime:
             sock.connect((host, port))
             firstTime = False
