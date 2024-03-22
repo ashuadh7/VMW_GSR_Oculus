@@ -7,44 +7,40 @@ using UnityEngine;
 public class ScanMoodmetric : MonoBehaviour
 {
     public MyListener myListener;
-    //public TextMeshProUGUI text;
-    // Start is called before the first frame update
-    void Start()
-    {
-        //UnityEngine.Debug.Log(Application.dataPath);
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void scanMoodmetric()
     {
-        Process proc = new Process();
-        string path = Application.dataPath + "//Resources//ScanMoodmetric.lnk";
-        proc.StartInfo.FileName = @path;
-        proc.Start();
+        RunPythonScript("scan");
     }
 
     public void startMoodmetric()
     {
-        Process proc = new Process();
-        string path = Application.dataPath + "//Resources//Moodmetric.lnk";
-        proc.StartInfo.FileName = @path;
-        proc.Start();
-        //StartCoroutine(displayError());
+        RunPythonScript("scan");
     }
 
-    //private IEnumerator displayError()
-    //{
-    //    yield return new WaitForSeconds(5);
-    //    if (!myListener.startedReceivingData)
-    //    {
-    //        //text.text = "Try Again!!";   
-    //    }
-    //}
+    public void RunPythonScript(string scriptName)
+    {
+        Process proc = new Process();
+        // Using string concatenation to create the path
+        string pythonPath = Application.dataPath + "/Python/python.exe";
+        string scriptPath = Application.dataPath + "/Python/Scripts/" + scriptName + ".py";
+        proc.StartInfo.FileName = pythonPath;
+        proc.StartInfo.Arguments = "\"" + scriptPath + "\"";
+        proc.Start();
+
+        proc.StartInfo.UseShellExecute = false;
+        proc.StartInfo.RedirectStandardOutput = true;
+        proc.StartInfo.RedirectStandardError = true;
+        proc.StartInfo.CreateNoWindow = true; // Optional: if you want to hide the console window
+
+        // Subscribe to the output and error events
+        proc.OutputDataReceived += (sender, args) => UnityEngine.Debug.Log("Output: " + args.Data);
+        proc.ErrorDataReceived += (sender, args) => UnityEngine.Debug.LogError("Error: " + args.Data);
+
+        proc.Start();
+
+        // Begin asynchronous read operations
+        proc.BeginOutputReadLine();
+        proc.BeginErrorReadLine();
+    }
 
 }
